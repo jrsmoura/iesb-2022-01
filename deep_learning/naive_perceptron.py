@@ -16,6 +16,18 @@ def func_step(z: float) -> float:
         return 0
 
 
+def func_sigmoid(z: float) -> float:
+    """Compute the sigmoid funcion of z
+
+    :args:
+        - z (float) real value
+    :returns:
+        - sigmoid function of z
+
+    """
+    return AssertionError("To be implemented")
+
+
 def perceptron(x: list, w: list) -> float:
     """Realiza uma passagem ao longo de um perceptron simples
     Caso particular em que b = 0
@@ -32,7 +44,7 @@ def perceptron(x: list, w: list) -> float:
 
 if __name__ == "__main__":
     x = np.array([0.1, 1.1, 3.9, 0.3])
-    w = np.array([-0.2, 0.01, -0.3, 0.05])
-    print(f"{np.dot(x.T, w)}")
+    w = np.array([-0.2, 0.01, 0.3, 0.05])
+    print(f"{round(np.dot(x.T, w), 2)}")
     output = perceptron(x, w)
-    print(f"{output}")
+    print(f"Object Class: {output}")
