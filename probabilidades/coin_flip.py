@@ -2,7 +2,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 """
-Exeperimento: lançamento de duas moedas não viciadas
+Experimento: lançamento de duas moedas não viciadas
 A = {sair dois H}
 """
 
