@@ -10,7 +10,7 @@ def graph(_n_runs: int,
           _x_out: list,
           _y_out: list
           ) -> None:
-    fig = plt.figure(figsize=(16, 12))
+    fig = plt.figure(figsize=(8, 5))
     ax1 = fig.add_subplot(111)
     ax2 = fig.add_subplot(222)
     ax1.hlines(np.pi, 0, _n_runs, colors="brown", label="Valor Exato", linewidth=1)
